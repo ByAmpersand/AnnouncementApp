@@ -1,0 +1,50 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a1a1a;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeSlideDown 0.8s ease-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-text-white {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.logo-text-orange {
+  color: #f79a24;
+  margin-right: 10px;
+}
+
+.hub-box {
+  background-color: #f79a24;
+  color: #000000;
+  padding: 2px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

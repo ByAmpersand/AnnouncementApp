@@ -1,0 +1,38 @@
+# === General ===
+.DS_Store
+Thumbs.db
+
+# === Node / Vite / React (Frontend) ===
+**/node_modules/
+**/dist/
+**/.vite/
+**/.env.local
+**/.env.production
+**/.env
+
+# === ASP.NET Core / C# (Backend) ===
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# === AppSettings and Secrets ===
+AnnouncementBackend/appsettings.json
+
+# Optional: Uncomment the line below if appsettings.json contains sensitive data
+# AnnouncementBackend/appsettings.json
+
+# === Logs / Temp ===
+**/*.log
+**/logs/
+**/temp/
+
+# === IDE and Editor Settings ===
+.vscode/
+.idea/
+
+# === OS generated ===
+*.swp
+*.tmp
