@@ -2,6 +2,20 @@
 .DS_Store
 Thumbs.db
 
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.vsidx
+
+# Copilot
+**/CopilotIndices/
+**/copilot-chat/
+
+
 # === Node / Vite / React (Frontend) ===
 **/node_modules/
 **/dist/
