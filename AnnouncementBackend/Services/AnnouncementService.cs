@@ -45,13 +45,13 @@ namespace AnnouncementBackend.Services
                 Id = announcement.Id,
                 Title = announcement.Title,
                 Description = announcement.Description,
-                DateAdded = announcement.DateAdded,
+                DateAdded = DateTime.SpecifyKind(announcement.DateAdded, DateTimeKind.Utc),
                 SimilarAnnouncements = similar.Select(s => new AnnouncementDTO
                 {
                     Id = s.Id,
                     Title = s.Title,
                     Description = s.Description,
-                    DateAdded = s.DateAdded
+                    DateAdded = DateTime.SpecifyKind(s.DateAdded, DateTimeKind.Utc)
                 }).ToList()
             };
         }
